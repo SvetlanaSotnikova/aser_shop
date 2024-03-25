@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --font-family: "Inter", sans-serif;
+}
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left : 0;
+    padding-left: 0;
+}
+
+.main-page {
+    font-family     : var(--font-family);
+    background-color: #fff;
+}
+
+.menu_a {
+
+    font-weight    : 400;
+    font-size      : 16px;
+    line-height    : 140%;
+    color          : #1e1e1e;
+    text-decoration: none;
+
+}
+
+.menu-btn-link {
+    /* padding        : 14px 63px; */
+    border-right   : 1px solid rgba(0, 0, 0, 0.2);
+    width          : 200px;
+    height         : 50px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.logo {
+    background     : #82c446;
+    width          : 300px;
+    height         : 50px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.logo img {
+    max-width : 100%;
+    max-height: 100%;
+}
+
+.menu-links {
+    display: flex;
+}
+
+.size_btn_language {
+    border-right   : 1px solid rgba(0, 0, 0, 0.2);
+    width          : 100px;
+    height         : 50px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.menu-page {
+    display: flex;
+}
+
+.header {
+    display        : flex;
+    justify-content: center;
+    max-width      : 1400px;
+    margin         : 0 auto;
+    width          : 100%;
+}
+
+.menu-btn {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin-left    : 47px;
+}
+
+.home-backround img {
+    max-width: 100%;
+}
+
+.home-backround {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 1400px;
+    /* margin: 0 auto; */
+}
