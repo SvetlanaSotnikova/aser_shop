@@ -470,17 +470,25 @@ ul {
 }
 
 .carousel-collage .slider-collage .slide-collage {
+    width        : 420px;
+    height       : 400px;
     width  : 100%;
     display: inline-block;
+    overflow: hidden;
 }
 
 .slide-collage-box::after{
-    max-width        : 420px;
-    max-height       : 400px;
+    width        : 420px;
+    height       : 400px;
     /* display       : inline-block; */
 }
 
-.slide-collage-box::before {
-    width : 847px;
-    height: 618px;
+.slide-collage-box::after {
+    max-width : 847px;
+    max-height: 618px;
+}
+
+.slider-collage {
+    display: flex;
+    gap: 30px;
 }
