@@ -465,30 +465,185 @@ ul {
 }
 
 .carousel-collage {
-    width: 100%;
-    /* Ширина слайда равна 100% */
-}
-
-.carousel-collage .slider-collage .slide-collage {
-    width        : 420px;
-    height       : 400px;
-    width  : 100%;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.slide-collage-box::after{
-    width        : 420px;
-    height       : 400px;
-    /* display       : inline-block; */
-}
-
-.slide-collage-box::after {
-    max-width : 847px;
-    max-height: 618px;
+    width       : 100%;
+    /* max-width: 1400px; */
 }
 
 .slider-collage {
-    display: flex;
-    gap: 30px;
+    display                      : flex;
+    gap                          : 30px;
+    overflow-x                   : hidden;
+    overflow-y                   : hidden;
+    scroll-snap-type             : x mandatory;
+    /* -webkit-overflow-scrolling: touch; */
+    height                       : 625px;
+}
+
+.slide-collage {
+    /* width            : 427px;
+    height           : 418px; */
+    scroll-snap-align: start;
+    flex             : 0 0 auto;
+}
+
+.slide-collage-box {
+    width : 427px;
+    height: 418px;
+}
+
+.active-slider {
+    width : 873px;
+    height: 540px;
+}
+
+.slide-collage img {
+    height: auto
+}
+
+.slick-prev {
+    background-color: #fff;
+    border          : 1px solid rgba(72, 72, 74, 0.2);
+    width           : 60px;
+    height          : 60px;
+}
+
+.slick-prev img {
+    transform: scaleX(-1);
+}
+
+.slick-next {
+    background-color: #fff;
+    border          : 1px solid rgba(72, 72, 74, 0.2);
+    width           : 60px;
+    height          : 60px;
+}
+
+.buttons-carousel {
+    display: inline-flex;
+}
+
+.description-slider {
+    display        : flex;
+    justify-content: space-between;
+    max-width      : 1400px;
+}
+
+.description-box-slider {
+    width          : 787px;
+    display        : flex;
+    justify-content: space-between;
+    margin-bottom  : 40px;
+}
+
+.slide-text-box .text1 {
+    font-weight   : 500;
+    font-size     : 18px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color         : #1c1c1e;
+}
+
+.slide-text-box .text2 {
+    font-weight   : 400;
+    font-size     : 16px;
+    letter-spacing: -0.02em;
+    color         : #1c1c1e;
+}
+
+.slide-text-box .text3 {
+    font-weight   : 400;
+    font-size     : 16px;
+    letter-spacing: -0.02em;
+    color         : #48484a;
+}
+
+.slide-text-box {
+    padding-top: 10px;
+}
+
+.link-top a {
+    padding         : 10px 600px;
+    border-bottom   : 1px solid rgba(0, 0, 0, 0.1);
+    border-top      : 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #82c446;
+    font-weight     : 500;
+    font-size       : 16px;
+    color           : #fff;
+    text-decoration : none;
+    border-radius   : 5px;
+
+}
+
+.link-top {
+    margin-bottom: 10px;
+}
+
+.footer-list-info ul,
+.footer-list-info ol {
+    padding-left: 0;
+}
+
+.footer-list-info h2 {
+    font-weight  : 400;
+    font-size    : 18px;
+    color        : #1e1e1e;
+    margin-bottom: 0;
+}
+
+.footer-list-info li {
+    font-weight: 400;
+    font-size  : 14px;
+    color      : rgba(30, 30, 30, 0.8);
+    padding-top: 10px;
+}
+
+.footer-lists {
+    display        : inline-flex;
+    gap            : 200px;
+    justify-content: center;
+    max-width      : 1226px;
+}
+
+.footer {
+    display        : flex;
+    justify-content: center;
+    height         : 260px;
+    align-items    : center;
+    background     : #f5f5f7;
+    max-width      : 1308px;
+}
+
+.mini-footer-list ul,
+.mini-footer-list ol {
+    padding-left: 0;
+}
+
+.mini-footer-list ul li {
+    display: inline-block;
+}
+
+.mini-footer-list li {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding    : 10px;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 140%;
+    color      : rgba(30, 30, 30, 0.8);
+}
+
+.mini-footer-info .text1 {
+    padding: 10px;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 140%;
+    color      : #1e1e1e;
+}
+
+.mini-footer-info {
+    display: inline-flex;
+}
+
+.mini-footer {
+    max-width      : 1308px;
+    background: #f0f0f0;
 }

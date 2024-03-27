@@ -8,9 +8,8 @@
     <link rel="shortcut icon" href="/img/icons/acer.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" />
-    <!-- Добавляем тему по умолчанию из CDN -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" /> -->
     <title>Aser shop главная страница</title>
 </head>
 
@@ -311,24 +310,40 @@
             <section id="collage">
                 <div class="collage-content">
                     <div class="position">
-                        <div class="description-box">
-                            <div class="info-section">(05) Wallpaper</div>
-                            <div class="description-page">
-                                <h1>See what our community</h1>
-                                <p>here are the most popular #acercorporation photos taken from instagram</p>
+                        <div class="description-slider">
+                            <div class="description-box-slider">
+                                <div class="info-section">(05) Wallpaper</div>
+                                <div class="description-page">
+                                    <h1>See what our community</h1>
+                                    <p>here are the most popular #acercorporation photos taken from instagram</p>
+                                </div>
                             </div>
-                            <button class="slick-prev">Previous</button>
-                            <button class="slick-next">Next</button>
+                            <div class="buttons-carousel">
+                                <button class="slick-prev"><img src="/img/icons/move_right.svg"
+                                        alt="arrow left"></button>
+                                <button class="slick-next"><img src="/img/icons/move_right.svg"
+                                        alt="arrow right"></button>
+                            </div>
                         </div>
                         <div class="carousel-collage">
                             <div class="slider-collage">
                                 <div class="slide-collage">
-                                    <div class="slide-collage-box">
+                                    <div class="slide-collage-box active-slider">
                                         <img src="/img/en/collage/slide1.jpg" class="img-fluid" alt="slide 1">
                                         <div class="slide-text-box">
                                             <div class="text1">Conference</div>
                                             <div class="text2">posted on 04.11.2023</div>
                                             <div class="text3">@stelena</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-collage">
+                                    <div class="slide-collage-box">
+                                        <img src="/img/en/collage/slide2.jpg" class="img-fluid" alt="slide 2">
+                                        <div class="slide-text-box">
+                                            <div class="text1">Conference</div>
+                                            <div class="text2">posted on 04.11.2023</div>
+                                            <div class="text3">@aceroficiall</div>
                                         </div>
                                     </div>
                                 </div>
@@ -344,7 +359,7 @@
                                 </div>
                                 <div class="slide-collage">
                                     <div class="slide-collage-box">
-                                        <img src="/img/en/collage/slide1.jpg" class="img-fluid" alt="slide 1">
+                                        <img src="/img/en/collage/slide2.jpg" class="img-fluid" alt="slide 2">
                                         <div class="slide-text-box">
                                             <div class="text1">Conference</div>
                                             <div class="text2">posted on 04.11.2023</div>
@@ -360,11 +375,75 @@
             </section>
         </main>
         <footer class="page-footer">
-
+            <div class="position">
+                <div class="footer-container">
+                    <div class="link-top"> <a  href="#">BACK TO TOP</a></div>
+                   
+                    <div class="footer">  
+                        <div class="footer-lists">
+                            <div class="footer-list-info">
+                                <h2>Acer products</h2>
+                                <ul>
+                                    <li>Notebooks</li>
+                                    <li>Computers</li>
+                                    <li>Tablets</li>
+                                    <li>Accesories</li>
+                                    <li>Internet connetcions (routers)</li>
+                                </ul>
+                            </div>
+                            <div class="footer-list-info">
+                                <h2>Support</h2>
+                                <ul>
+                                    <li>Acer ID</li>
+                                    <li>Register a Product</li>
+                                    <li>Acer Community</li>
+                                    <li>Drivers and Manuals</li>
+                                    <li>Contact Support</li>
+                                </ul>
+                            </div>
+                            <div class="footer-list-info">
+                                <h2>Resources</h2>
+                                <ul>
+                                    <li>Acer Corner</li>
+                                    <li>Acer Global Account Portal</li>
+                                    <li>Online Stores</li>
+                                    <li>Acer Technologies</li>
+                                    <li>Corporate Social Responsibility</li>
+                                </ul>
+                            </div>
+                            <div class="footer-list-info">
+                                <h2>About Acer</h2>
+                                <ul>
+                                    <li>Contact Us</li>
+                                    <li>Investor Relations</li>
+                                    <li>Press</li>
+                                    <li>Careers</li>
+                                    <li>Events</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mini-footer">
+                        <div class="mini-footer-info">
+                            <div class="text1">&copy;2023 Acer Inc.</div>
+                            <div class="mini-footer-list">
+                                <ul>
+                                    <li>Privacy policy</li>
+                                    <li>Cookie policy</li>
+                                    <li>Legal notice</li>
+                                    <li>Additional legal information</li>
+                                    <li>Cookie settings</li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <script src="/scripts/colageslider.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
 
     </div>
 </body>
