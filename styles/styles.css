@@ -616,6 +616,7 @@ ul {
 .mini-footer-list ul,
 .mini-footer-list ol {
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .mini-footer-list ul li {
@@ -641,9 +642,17 @@ ul {
 
 .mini-footer-info {
     display: inline-flex;
+    align-items: center;
+    width: 1245px;
 }
 
 .mini-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.mini-footer-container {
     max-width      : 1308px;
     background: #f0f0f0;
 }
+
