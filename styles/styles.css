@@ -9,16 +9,6 @@
     padding: 0;
 }
 
-ul,
-li {
-    list-style-type: none;
-}
-
-ul {
-    margin-left : 0;
-    padding-left: 0;
-}
-
 .main-page {
     font-family     : var(--font-family);
     background-color: #fff;
@@ -83,11 +73,18 @@ ul {
     /* width          : 100%; */
 }
 
+.header-container {
+    width: 100%;
+}
+
 .menu-btn {
     display        : flex;
     justify-content: center;
     align-items    : center;
     margin-left    : 47px;
+    margin-right   : 47px;
+    transition     : margin-left 0.5s ease;
+
 }
 
 .home-backround img {
@@ -115,6 +112,7 @@ ul {
     max-width  : 675px;
     margin-top : 30px;
     margin-left: 490px;
+    transition : margin-left 0.5s ease, margin-top 0.5s ease, font-size 0.5s ease;
 }
 
 .home-description {
@@ -178,25 +176,24 @@ ul {
     line-height   : 120%;
     letter-spacing: -0.02em;
     color         : #48484a;
+    max-width     : 326px;
 }
 
 .popular-product-box {
     max-width: 427px;
 }
 
-/* .popular-product-box img{
-    max-height: 100%;
-    max-width: 100%;
-}  */
+
 .popular-products-boxes {
     display: flex;
     gap    : 20px;
 }
 
 .position {
-    max-width: 1400px;
-    margin   : 0 auto;
-    padding  : 120px 40px 0 40px;
+    max-width : 1400px;
+    margin    : 0 auto;
+    padding   : 120px 40px 0 40px;
+    transition: padding 0.5s ease;
 }
 
 .news-box-box-box .posted-date {
@@ -480,17 +477,17 @@ ul {
 }
 
 .slide-collage {
-    width            : 427px;  
-    height           : 418px; 
-    transition: width 0.3s ease, height 0.3s ease;
+    width              : 427px;
+    height             : 418px;
+    transition         : width 0.3s ease, height 0.3s ease;
     /*scroll-snap-align: start;*/
-    flex             : 0 0 auto;
+    flex               : 0 0 auto;
 }
 
 .slide-collage-box {
     /*width : 427px;
     height: 418px;*/
-    width: 100%; 
+    width : 100%;
     height: 100%;
 }
 
@@ -500,8 +497,8 @@ ul {
 }
 
 .slide-collage img {
-    height: 90%; 
-    width: 100%;
+    height: 90%;
+    width : 100%;
 }
 
 .slick-prev {
@@ -668,15 +665,112 @@ ul {
     line-height             : 140%;
     text-decoration-skip-ink: none;
     color                   : #0071e3;
-    margin-left: 10px;
+    margin-left             : 10px;
 }
 
 .languige-box svg {
     /* stroke-width: 2px; */
-    stroke      : rgba(0, 0, 0, 0.4);
+    stroke: rgba(0, 0, 0, 0.4);
 }
 
 .languige-box {
     display    : inline-flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1112px) {
+    .home-description p {
+        font-size  : 36px;
+        margin-left: 300px;
+    }
+
+    .menu-btn-link:first-child,
+    .menu-btn-link:nth-child(3) {
+        display: none;
+    }
+
+    .position {
+        padding: 100px 20px 0 20px;
+    }
+
+    .popular-product-box {
+        max-width: 354px;
+        overflow : hidden;
+    }
+
+}
+
+@media screen and (max-width: 869px) and (min-width: 660px) {
+    .home-description p {
+        font-size  : 36px;
+        margin-left: 219px;
+    }
+
+    .menu-btn-link:first-child,
+    .menu-btn-link:nth-child(3),
+    .menu-btn-link:nth-child(4) {
+        display: none;
+    }
+
+    .popular-products-boxes .popular-product-box:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 659px) {
+    .home-description p {
+        font-size  : 30px;
+        margin-left: 200px;
+    }
+
+    .menu-btn-link:first-child,
+    .menu-btn-link:nth-child(3),
+    .menu-btn-link:nth-child(4) {
+        display: none;
+    }
+
+    .popular-products-boxes .popular-product-box:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .home-description p {
+        font-size  : 30px;
+        margin-left: 20px;
+        margin-top : 10px;
+    }
+
+    .menu-links {
+        display: none;
+    }
+
+    .menu-btn {
+        margin-left : 110px;
+        margin-right: 10px;
+    }
+
+    .popular-products-boxes .popular-product-box:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .home-description p {
+        font-size  : 25px;
+        margin-left: 20px;
+        margin-top : 10px;
+    }
+
+    .menu-links {
+        display: none;
+    }
+
+    .menu-btn {
+        margin-left: 50px;
+    }
+
+    .popular-products-boxes .popular-product-box:last-child {
+        display: none;
+    }
 }
