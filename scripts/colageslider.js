@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const prevButton = document.querySelector('.slick-prev');
     const nextButton = document.querySelector('.slick-next');
     const step = 427; 
-    // const activeStep = document.querySelector('.avtive-slider');
+    // const activeStep = document.querySelector('.aсtive-slider');
     const activeStep = 818;
     let currentIndex = 0; 
 
