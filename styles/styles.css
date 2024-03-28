@@ -191,6 +191,7 @@ ul, li {
 .popular-products-boxes {
     display: flex;
     gap    : 20px;
+    justify-content: center;
 }
 
 .position {
@@ -488,7 +489,7 @@ ul, li {
 
 .slide-collage {
     width              : 427px;
-    height             : 418px;
+    height             : 310px;
     transition         : width 0.3s ease, height 0.3s ease;
     /*scroll-snap-align: start;*/
     flex               : 0 0 auto;
@@ -507,7 +508,7 @@ ul, li {
 }
 
 .slide-collage img {
-    height: 90%;
+    height: 100%;
     width : 100%;
 }
 
@@ -627,6 +628,7 @@ ul, li {
     align-items    : center;
     background     : #f5f5f7;
     width      : 100%;
+    height: auto;
 }
 
 .mini-footer-list ul,
