@@ -17,18 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     prevButton.addEventListener('click', function() {
         if (currentIndex > 0) {
-            slider.children[currentIndex].classList.remove('active-slider');
+            slider.children[currentIndex].children[0].classList.remove('active-slider');
             currentIndex--;
-            slider.children[currentIndex].classList.add('active-slider');
+            slider.children[currentIndex].children[0].classList.add('active-slider');
             scrollToCurrentSlide();
         }
     });
 
     nextButton.addEventListener('click', function() {
         if (currentIndex < slider.children.length - 1) {
-            slider.children[currentIndex].classList.remove('active-slider');
+            slider.children[currentIndex].children[0].classList.remove('active-slider');
             currentIndex++;
-            slider.children[currentIndex].classList.add('active-slider');
+            slider.children[currentIndex].children[0].classList.add('active-slider');
             scrollToCurrentSlide();
         }
     });
