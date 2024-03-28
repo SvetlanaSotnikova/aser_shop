@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const nextButton = document.querySelector('.slick-next');
     const step = 427; 
     // const activeStep = document.querySelector('.aсtive-slider');
-    const activeStep = 818;
+    const activeStep = 427;
     let currentIndex = 0; 
 
     function scrollToCurrentSlide() {
