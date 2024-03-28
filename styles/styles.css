@@ -9,7 +9,8 @@
     padding: 0;
 }
 
-ul, li {
+ul,
+li {
     list-style-type: none;
 }
 
@@ -189,8 +190,8 @@ ul, li {
 
 
 .popular-products-boxes {
-    display: flex;
-    gap    : 20px;
+    display        : flex;
+    gap            : 20px;
     justify-content: center;
 }
 
@@ -217,7 +218,7 @@ ul, li {
     color         : #1c1c1e;
     margin-bottom : 20px;
     margin-top    : 30px;
-    transition   : font-size 0.5s ease;
+    transition    : font-size 0.5s ease;
 }
 
 .news-box-box-box p {
@@ -322,6 +323,7 @@ ul, li {
     align-items     : center;
     justify-content : space-between;
     border-top      : 1px dashed rgba(72, 72, 74, 0.2);
+    line-height     : normal;
 }
 
 .accordion__number {
@@ -368,23 +370,23 @@ ul, li {
     font-size: 20px;
 }
 
-.accordion {
-    line-height: normal;
-}
 
 .accordion__text-container {
-    display: inline-flex;
-    gap    : 436px;
+    display   : inline-flex;
+    gap       : 436px;
+    transition: gap 0.5s ease, justify-content 0.5s ease;
 }
 
 .panel__position {
-    display     : inline-flex;
-    flex-wrap   : wrap;
-    gap         : 30px;
-    /* max-width: 797px; */
-    margin-right: 50px;
-    max-height  : 180px;
+    display        : inline-flex;
+    flex-wrap      : wrap;
+    gap            : 30px;
+    /* max-width   : 797px; */
+    margin-right   : 50px;
+    /* max-height  : fit-content; */
+    height         : auto;
 }
+
 
 .panel p {
     max-width  : 416px;
@@ -574,22 +576,22 @@ ul, li {
 }
 
 .link-top a {
-    font-weight    : 500;
-    font-size      : 16px;
-    color          : #fff;
-    text-decoration: none;
+    font-weight     : 500;
+    font-size       : 16px;
+    color           : #fff;
+    text-decoration : none;
     border-bottom   : 1px solid rgba(0, 0, 0, 0.1);
     border-top      : 1px solid rgba(0, 0, 0, 0.1);
     background-color: #82c446;
     padding         : 10px 0px;
     border-radius   : 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
 }
 
 .link-top {
-    width: 100%; 
+    width: 100%;
 
 }
 
@@ -613,22 +615,21 @@ ul, li {
 }
 
 .footer-lists {
-    position: relative;
     display        : flex;
     gap            : 170px;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap      : wrap;
 }
 
 .footer {
-    position: relative;
     display        : flex;
     justify-content: center;
     height         : 260px;
     align-items    : center;
     background     : #f5f5f7;
-    width      : 100%;
-    height: auto;
+    width          : 100%;
+    height         : auto;
+    padding        : 50px
 }
 
 .mini-footer-list ul,
@@ -670,9 +671,8 @@ ul, li {
 }
 
 .mini-footer-container {
-    width      : 100%;
+    width     : 100%;
     background: #f0f0f0;
-    display   : block;
 }
 
 .languige-box a {
@@ -692,6 +692,10 @@ ul, li {
 .languige-box {
     display    : inline-flex;
     align-items: center;
+}
+
+.mobile-footer {
+    display: none;
 }
 
 @media screen and (max-width: 1110px) {
@@ -755,10 +759,18 @@ ul, li {
     .btn-gotostory {
         display: none;
     }
+    .popular-products-boxes {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    .popular-product-box p {
+        max-width: 282px;
+    }
     .news-box-box-box p {
         font-size: 14px;
     }
+
     .news-box-box-box h2 {
         font-size: 18px;
     }
@@ -775,6 +787,16 @@ ul, li {
         margin-bottom: 50px;
     }
 
+    .accordion__text-container {
+        display        : flex;
+        gap            : 200px;
+        justify-content: space-between;
+    }
+
+    .panel__position {
+        display        : inline-flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 727px) {
@@ -789,48 +811,49 @@ ul, li {
         display: none;
     }
 
-    .popular-products-boxes .popular-product-box:last-child {
-        display: none;
-    }
-
     .news-box-box-box p {
         font-size: 14px;
     }
+
     .news-box-box-box h2 {
         font-size: 20px;
     }
 
-    .news-box-box-box.news-margin-p_freim2 p {
-        margin-bottom: 40px;
-    }
-
-    .news-box-box-box.news-margin-p_freim3 p {
-        margin-bottom: 35px;
-    }
-
-    .news-box-box-box p {
-        margin-bottom: 50px;
-    }
-
-    /* .news-box .img-fluid {
-        max-width : 355px;
-        max-height: 300px;
-    } */
 
     .news-box {
-        display: flex;
+        display  : flex;
         flex-wrap: wrap;
-        height: auto;
+        height   : auto;
         max-width: 320px;
     }
 
     .news-boxes {
-        display: flex;
-        flex-direction: column;
+        display        : flex;
+        flex-direction : column;
         justify-content: center;
-        align-items: center;
-        width: 100%;
+        align-items    : center;
+        width          : 100%;
     }
+
+    .footer-lists {
+        display        : flex;
+        justify-content: flex-start;
+        padding        : 20px 30px;
+        gap            : 50px;
+    }
+
+    .mini-footer-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mini-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+
 }
 
 @media screen and (max-width: 564px) {
@@ -853,6 +876,11 @@ ul, li {
         display: none;
     }
 
+    .accordion__text-container {
+        display        : flex;
+        gap            : 100px;
+        justify-content: space-between;
+    }
 
 
 }
@@ -879,24 +907,16 @@ ul, li {
     .news-box-box-box p {
         font-size: 14px;
     }
+
     .news-box-box-box h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
-    .news-box-box-box.news-margin-p_freim2 p {
-        margin-bottom: 40px;
+    .accordion__text-container {
+        display        : flex;
+        gap            : 40px;
+        justify-content: space-between;
     }
 
-    .news-box-box-box.news-margin-p_freim3 p {
-        margin-bottom: 35px;
-    }
 
-    .news-box-box-box p {
-        margin-bottom: 50px;
-    }
-
-    .news-box .img-fluid {
-        max-width : 355px;
-        max-height: 300px;
-    }
 }
