@@ -474,6 +474,10 @@ li {
     fill: #32d74b;
 }
 
+.collage-content {
+    margin-bottom: 100px;
+}
+
 .carousel-collage {
     width       : 100%;
     /* max-width: 1400px; */
@@ -598,20 +602,26 @@ li {
 .footer-list-info ul,
 .footer-list-info ol {
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .footer-list-info h2 {
     font-weight  : 400;
     font-size    : 18px;
     color        : #1e1e1e;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
-.footer-list-info li {
+.footer-list-info li a {
+    text-decoration: none;
     font-weight: 400;
     font-size  : 14px;
     color      : rgba(30, 30, 30, 0.8);
-    padding-top: 10px;
+    /* padding-top: 10px; */
+}
+
+.footer-list-info li {
+    line-height: 220%;
 }
 
 .footer-lists {
@@ -629,7 +639,7 @@ li {
     background     : #f5f5f7;
     width          : 100%;
     height         : auto;
-    padding        : 50px
+    padding        : 50px;  
 }
 
 .mini-footer-list ul,
@@ -642,7 +652,7 @@ li {
     display: inline-block;
 }
 
-.mini-footer-list li {
+.mini-footer-list li a {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     padding    : 10px;
     font-weight: 400;
@@ -698,11 +708,15 @@ li {
     display: none;
 }
 
+.position.position-footer {
+    padding: 0  ;
+}
+
 .accordion-footer {
     background     : #f5f5f7;
     color          : #444;
     cursor         : pointer;
-    padding        : 20px;
+    padding        : 11px 20px;
     width          : 100%;
     border         : none;
     outline        : none;
@@ -725,29 +739,37 @@ li {
 
 .accordion-footer:after {
     content    : "\002B";
-    font-size  : 11px 20px;
+    font-size  : 20px;
     color      : #777;
     float      : right;
     margin-left: 5px;
 }
 
 .accordion-footer h2 {
-    font-weight: 400;
-    font-size  : 18px;
-    color      : #1e1e1e;
+    font-weight  : 400;
+    font-size    : 18px;
+    color        : #1e1e1e;
     margin-bottom: 0;
 }
 
-.panel-footer li {
+.panel-footer li a {
     font-weight: 400;
     font-size  : 14px;
     color      : rgba(30, 30, 30, 0.8);
-    padding-top: 10px;
+    line-height: 190%;
 }
+
+.panel-footer ul {
+    padding-left: 0;
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
 .active-f:after {
     content  : "\2212";
     font-size: 20px;
 }
+
 
 @media screen and (max-width: 1110px) {
     .home-description p {
@@ -761,6 +783,7 @@ li {
     }
 
     .position {
+        max-width: 1400px;
         padding: 100px 20px 0 20px;
     }
 
@@ -787,6 +810,13 @@ li {
 
     .news-box-box-box p {
         margin-bottom: 35px;
+    }
+
+    .mini-footer {
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        gap: 20px;
     }
 
 }
@@ -840,6 +870,19 @@ li {
         margin-bottom: 50px;
     }
 
+    .mini-footer {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        gap            : 20px;
+    }
+
+    .accordion__text-container {
+        display   : inline-flex;
+        gap       : 200px;
+    }
+
+
 }
 
 @media screen and (max-width: 727px) {
@@ -878,22 +921,21 @@ li {
         width          : 100%;
     }
 
-    .footer-lists {
+    .mini-footer-info {
         display        : flex;
-        justify-content: flex-start;
-        padding        : 20px 30px;
-        gap            : 50px;
+        flex-direction : column;
+        justify-content: center;
     }
 
-    .mini-footer-list {
-        display  : flex;
-        flex-wrap: wrap;
+    .mini-footer-info.mini-footer-list ul {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: center;
     }
 
     .mini-footer {
         display        : flex;
-        flex-wrap      : wrap;
-        justify-content: flex-end;
+        justify-content: center;
         gap            : 10px;
     }
 
