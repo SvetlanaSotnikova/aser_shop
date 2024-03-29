@@ -34,7 +34,24 @@
                     </div>
                 </nav>
                 <div class="menu-btn">
-                    <img src="/img/en/menu_btn.png" alt="menu">
+
+                    <div class="menu-btn">
+                        <div class="menu-btn-burger">
+                            <div class="container-burger" onclick="myFunction(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    <script>
+                        function myFunction(x) {
+                            x.classList.toggle("change");
+                        }
+                    </script>
+                    <!-- <img src="/img/en/menu_btn.png" alt="menu"> -->
                 </div>
             </div>
         </header>
@@ -521,7 +538,7 @@
             </div>
         </footer>
 
-
+        <script src="/scripts/getDarkTheme.js"></script>
         <script src="/scripts/colageslider.js"></script>
         <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->

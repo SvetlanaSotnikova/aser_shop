@@ -92,6 +92,39 @@ li {
 
 }
 
+.container-burger {
+    display: inline-block;
+    cursor : pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width           : 18px;
+    height          : 2px;
+    background-color: rgba(30, 30, 30, 0.93);
+    margin          : 2px 0;
+    transition      : 0.4s;
+}
+
+.dark-mode .bar1,
+.dark-mode .bar2,
+.dark-mode .bar3 {
+    background-color: #fff; 
+}
+
+.change .bar1 {
+    transform: rotate(45deg) translate(3px, 3px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(-45deg) translate(2.4px, -3px);
+}
+
 .home-backround img {
     position: relative;
     width   : 100%;
@@ -601,7 +634,7 @@ li {
 
 .footer-list-info ul,
 .footer-list-info ol {
-    padding-left: 0;
+    padding-left : 0;
     margin-bottom: 0;
 }
 
@@ -614,10 +647,10 @@ li {
 
 .footer-list-info li a {
     text-decoration: none;
-    font-weight: 400;
-    font-size  : 14px;
-    color      : rgba(30, 30, 30, 0.8);
-    /* padding-top: 10px; */
+    font-weight    : 400;
+    font-size      : 14px;
+    color          : rgba(30, 30, 30, 0.8);
+    /* padding-top : 10px; */
 }
 
 .footer-list-info li {
@@ -639,7 +672,7 @@ li {
     background     : #f5f5f7;
     width          : 100%;
     height         : auto;
-    padding        : 50px;  
+    padding        : 50px;
 }
 
 .mini-footer-list ul,
@@ -709,7 +742,7 @@ li {
 }
 
 .position.position-footer {
-    padding: 0  ;
+    padding: 0;
 }
 
 .accordion-footer {
@@ -760,8 +793,8 @@ li {
 }
 
 .panel-footer ul {
-    padding-left: 0;
-    padding: 15px 0;
+    padding-left : 0;
+    padding      : 15px 0;
     margin-bottom: 0;
 }
 
@@ -784,7 +817,7 @@ li {
 
     .position {
         max-width: 1400px;
-        padding: 100px 20px 0 20px;
+        padding  : 100px 20px 0 20px;
     }
 
     .popular-product-box {
@@ -813,10 +846,10 @@ li {
     }
 
     .mini-footer {
-        display: flex;
+        display       : flex;
         flex-direction: column;
-       align-items: center;
-        gap: 20px;
+        align-items   : center;
+        gap           : 20px;
     }
 
 }
@@ -878,8 +911,8 @@ li {
     }
 
     .accordion__text-container {
-        display   : inline-flex;
-        gap       : 200px;
+        display: inline-flex;
+        gap    : 200px;
     }
 
     .mini-footer-info .text1 {
@@ -992,6 +1025,7 @@ li {
         flex-direction: column;
         gap           : 10px;
     }
+
     .mini-footer-info {
         display        : flex;
         flex-direction : column;
