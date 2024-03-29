@@ -422,6 +422,77 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mobile-footer-container">
+
+                        <div class="mobile-footer">
+                            <button class="accordion-footer">
+                                <h2>Acer products</h2>
+                            </button>
+                            <div class="panel-footer">
+                                <ul>
+                                    <li>Notebooks</li>
+                                    <li>Computers</li>
+                                    <li>Tablets</li>
+                                    <li>Accesories</li>
+                                    <li>Internet connetcions (routers)</li>
+                                </ul>
+                            </div>
+                            <button class="accordion-footer">
+                                <h2>Support</h2>
+                            </button>
+                            <div class="panel-footer">
+                                <ul>
+                                    <li>Acer ID</li>
+                                    <li>Register a Product</li>
+                                    <li>Acer Community</li>
+                                    <li>Drivers and Manuals</li>
+                                    <li>Contact Support</li>
+                                </ul>
+                            </div>
+                            <button class="accordion-footer">
+                                <h2>Resources</h2>
+                            </button>
+                            <div class="panel-footer"> 
+                                <ul>
+                                    <li>Acer Corner</li>
+                                    <li>Acer Global Account Portal</li>
+                                    <li>Online Stores</li>
+                                    <li>Acer Technologies</li>
+                                    <li>Corporate Social Responsibility</li>
+                                </ul>
+                            </div>
+                            <button class="accordion-footer">
+                                <h2>About Acer</h2>
+                            </button>
+                            <div class="panel-footer">
+                                <ul>
+                                    <li>Contact Us</li>
+                                    <li>Investor Relations</li>
+                                    <li>Press</li>
+                                    <li>Careers</li>
+                                    <li>Events</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <script>
+                            var acc = document.getElementsByClassName("accordion-footer");
+                            var i;
+
+                            for (i = 0; i < acc.length; i++) {
+                                acc[i].addEventListener("click", function () {
+                                    this.classList.toggle("active-f");
+                                    var panel = this.nextElementSibling;
+                                    if (panel.style.maxHeight) {
+                                        panel.style.maxHeight = null;
+                                    } else {
+                                        panel.style.maxHeight = panel.scrollHeight + "px";
+                                    }
+                                });
+                            }
+                        </script>
+                    </div>
+
                     <div class="mini-footer-container">
                         <div class="mini-footer">
                             <div class="mini-footer-info">
@@ -449,7 +520,8 @@
                 </div>
             </div>
         </footer>
-        <div class="mobile-footer"></div>
+
+
         <script src="/scripts/colageslider.js"></script>
         <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->

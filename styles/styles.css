@@ -694,8 +694,59 @@ li {
     align-items: center;
 }
 
-.mobile-footer {
+.mobile-footer-container {
     display: none;
+}
+
+.accordion-footer {
+    background     : #f5f5f7;
+    color          : #444;
+    cursor         : pointer;
+    padding        : 20px;
+    width          : 100%;
+    border         : none;
+    outline        : none;
+    transition     : 0.4s ease;
+    display        : inline-flex;
+    align-items    : center;
+    justify-content: space-between;
+    border-top     : 1px dashed rgba(72, 72, 74, 0.2);
+    line-height    : normal;
+}
+
+
+.panel-footer {
+    padding         : 0 18px;
+    background-color: white;
+    max-height      : 0;
+    overflow        : hidden;
+    transition      : max-height 0.3s ease;
+}
+
+.accordion-footer:after {
+    content    : "\002B";
+    font-size  : 11px 20px;
+    color      : #777;
+    float      : right;
+    margin-left: 5px;
+}
+
+.accordion-footer h2 {
+    font-weight: 400;
+    font-size  : 18px;
+    color      : #1e1e1e;
+    margin-bottom: 0;
+}
+
+.panel-footer li {
+    font-weight: 400;
+    font-size  : 14px;
+    color      : rgba(30, 30, 30, 0.8);
+    padding-top: 10px;
+}
+.active-f:after {
+    content  : "\2212";
+    font-size: 20px;
 }
 
 @media screen and (max-width: 1110px) {
@@ -759,14 +810,16 @@ li {
     .btn-gotostory {
         display: none;
     }
+
     .popular-products-boxes {
-        display: flex;
+        display  : flex;
         flex-wrap: wrap;
     }
 
     .popular-product-box p {
         max-width: 282px;
     }
+
     .news-box-box-box p {
         font-size: 14px;
     }
@@ -787,16 +840,6 @@ li {
         margin-bottom: 50px;
     }
 
-    .accordion__text-container {
-        display        : flex;
-        gap            : 200px;
-        justify-content: space-between;
-    }
-
-    .panel__position {
-        display        : inline-flex;
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width: 727px) {
@@ -843,16 +886,24 @@ li {
     }
 
     .mini-footer-list {
-        display: flex;
+        display  : flex;
         flex-wrap: wrap;
-    }
-    .mini-footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 10px;
     }
 
+    .mini-footer {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: flex-end;
+        gap            : 10px;
+    }
+
+    .mobile-footer-container {
+        display: block;
+    }
+
+    .footer {
+        display: none;
+    }
 
 }
 
@@ -881,6 +932,21 @@ li {
         gap            : 100px;
         justify-content: space-between;
     }
+
+    .description-box {
+        display       : flex;
+        flex-direction: column;
+        gap           : 10px;
+    }
+
+    .description-box-slider,
+    .description-slider {
+        display       : flex;
+        flex-wrap     : wrap;
+        flex-direction: column;
+        gap           : 10px;
+    }
+
 
 
 }
