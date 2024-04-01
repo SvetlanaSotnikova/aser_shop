@@ -41,7 +41,7 @@ li {
 
 .logo {
     background     : #82c446;
-    width          : 300px;
+    min-width      : 300px;
     height         : 50px;
     display        : flex;
     justify-content: center;
@@ -87,7 +87,7 @@ li {
     justify-content: center;
     align-items    : center;
     margin-left    : 47px;
-    margin-right   : 47px;
+    /* margin-right   : 47px; */
     transition     : margin-left 0.5s ease;
 
 }
@@ -110,7 +110,7 @@ li {
 .dark-mode .bar1,
 .dark-mode .bar2,
 .dark-mode .bar3 {
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 .change .bar1 {
@@ -519,12 +519,17 @@ li {
 .slider-collage {
     display                      : flex;
     gap                          : 30px;
-    overflow-x                   : hidden;
-    overflow-y                   : hidden;
+    overflow                     : hidden;
+    /* overflow                     : clip; */
     scroll-snap-type             : x mandatory;
     /* -webkit-overflow-scrolling: touch; */
     height                       : 625px;
+    z-index                      : 1;
 }
+
+/* .swiper-horizontal {
+    touch-action: pan-y;
+} */
 
 .slide-collage {
     width              : 427px;
@@ -532,6 +537,7 @@ li {
     transition         : width 0.3s ease, height 0.3s ease;
     /*scroll-snap-align: start;*/
     flex               : 0 0 auto;
+    cursor             : pointer;
 }
 
 .slide-collage-box {
@@ -999,7 +1005,7 @@ li {
 
     .menu-btn {
         margin-left : 110px;
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
 
     .popular-products-boxes .popular-product-box:last-child {
