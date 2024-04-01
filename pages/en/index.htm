@@ -35,17 +35,68 @@
                 </nav>
                 <div class="menu-btn">
                     <!-- <div class="menu-btn"> -->
-                        <div class="menu-btn-burger">
-                            <div class="container-burger" onclick="myFunction(this)">
-                                <div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
+                    <div class="menu-btn-burger">
+                        <div class="container-burger" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                    <div class="navbar-position">
+                        <div class="navbar-overlay closed" id="myDropdown">
+                            <div class="navbar-content">
+                                <div class="row-navbar">
+                                    <div class="column group-products">
+                                        <a class="border-top__a" role="button" href="##">(01) Laptops</a>
+                                        <a class="border-top__a" role="button" href="##">(02) Dekstops</a>
+                                        <a class="border-top__a" role="button" href="##">(03) Chromebooks</a>
+                                        <a class="border-top__a" role="button" href="##">(04) Tablets</a>
+                                        <a class="border-top__a" role="button" href="##">(05) Monitors</a>
+                                        <a class="border-top__a" role="button" href="##">(06) Smart devices</a>
+                                        <a class="border-top__a border-bottom__a" role="button" href="##">(07)
+                                            Networking</a>
+                                    </div>
+                                    <div class="classification">
+                                        <div class="column by-category">
+                                            <div class="title__group">By category</div>
+                                            <!-- <div class="a_btn">
+                                                <a role="button" href="##">Predator</a>
+                                                <a href="##"><img src="/img/icons/arrow-right-navbar.svg"
+                                                        alt="arrow right"></a>
+                                            </div> -->
+                                            <div class="wrapper-grid">
+                                                <a class="grid-item" role="button" href="##">
+                                                    Predator
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="column by-series"></div>
+                                    </div>
+                                    <div class="column open-gamming">
+                                        <img src="/img/en/popup-img.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    <!-- </div> -->
+                    </div>
                     <script>
                         function myFunction(x) {
                             x.classList.toggle("change");
+                            toggleDropdown();
+                        }
+                        function toggleDropdown() {
+                            var dropdownContent = document.getElementById("myDropdown");
+                            var mainContent = document.getElementById("mainContent");
+
+                            if (dropdownContent.style.display === "block") {
+                                dropdownContent.style.display = "none";
+                                mainContent.classList.remove("opacity");
+                            } else {
+                                dropdownContent.style.display = "block";
+                                mainContent.classList.add("opacity");
+                                //dropdownContent.classList.toggle("active");
+                            }
                         }
                     </script>
                     <!-- <img src="/img/en/menu_btn.png" alt="menu"> -->
@@ -54,7 +105,7 @@
         </header>
         <main class="content-container">
             <section id="home-content">
-                <div class="home-content">
+                <div class="home-content" id="mainContent">
                     <div class="home-content-flex">
                         <div class="home-backround">
                             <img src="/img/en/main_img.jpg" alt="home img">
@@ -65,6 +116,7 @@
                         </div>
                     </div>
                 </div>
+
             </section>
             <section id="popular-products">
                 <div class="popular-products-content">
