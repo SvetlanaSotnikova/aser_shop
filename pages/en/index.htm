@@ -59,22 +59,69 @@
                                     <div class="classification">
                                         <div class="column by-category">
                                             <div class="title__group">By category</div>
-                                            <!-- <div class="a_btn">
-                                                <a role="button" href="##">Predator</a>
-                                                <a href="##"><img src="/img/icons/arrow-right-navbar.svg"
-                                                        alt="arrow right"></a>
-                                            </div> -->
-                                            <div class="wrapper-grid">
-                                                <a class="grid-item" role="button" href="##">
+                                            <div class="wrapper-category">
+                                                <a class="item-wrapper" role="button" href="##">
                                                     Predator
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Gaming
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Green Pc Products
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Bussines
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Education
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Creators
                                                     <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="column by-series"></div>
+                                        <div class="border-wrapper"></div>
+                                        <div class="column by-series">
+                                            <div class="title__group">By series</div>
+                                            <div class="wrapper-category">
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Swift
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Aspire
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Spin
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Nitro
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    Enduro Urban
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                                <a class="item-wrapper" role="button" href="##">
+                                                    TravelMate
+                                                    <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="column open-gamming">
                                         <img src="/img/en/popup-img.jpg" alt="">
+                                        <a class="big-link" href="##">Opening our gamming bussines
+                                            <img src="/img/icons/arrow-right-navbar.svg" alt="arrow right">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -88,14 +135,13 @@
                         function toggleDropdown() {
                             var dropdownContent = document.getElementById("myDropdown");
                             var mainContent = document.getElementById("mainContent");
-
+                            //dropdownContent.classList.toggle("active");
                             if (dropdownContent.style.display === "block") {
                                 dropdownContent.style.display = "none";
                                 mainContent.classList.remove("opacity");
                             } else {
                                 dropdownContent.style.display = "block";
                                 mainContent.classList.add("opacity");
-                                //dropdownContent.classList.toggle("active");
                             }
                         }
                     </script>
