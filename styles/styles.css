@@ -41,7 +41,7 @@ li {
 
 .logo {
     background     : #82c446;
-    width      : 300px;
+    width          : 300px;
     height         : 50px;
     display        : flex;
     justify-content: center;
@@ -84,13 +84,13 @@ li {
 }
 
 .menu-btn {
-    display           : flex;
+    /* display           : flex;
     justify-content   : center;
-    align-items       : center;
+    align-items       : center; */
     margin-left       : 47px;
     /* margin-right   : 47px; */
     transition        : margin-left 0.5s ease;
-
+    margin-top        : 15px;
 }
 
 .container-burger {
@@ -101,6 +101,8 @@ li {
 .bar1,
 .bar2,
 .bar3 {
+    /* display: block; */
+
     width           : 18px;
     height          : 2px;
     background-color: rgba(30, 30, 30, 0.93);
@@ -138,10 +140,13 @@ li {
 }
 
 .home-content {
-    position  : relative;
-    max-width : 1400px;
-    margin    : 0 auto;
-    transition: opacity 0.5s ease;
+    position : relative;
+    max-width: 1400px;
+    margin   : 0 auto;
+}
+
+.home-content img {
+    transition: opacity 0.3s ease;
 }
 
 .home-description p {
@@ -166,39 +171,37 @@ li {
 }
 
 .navbar-overlay {
-    display         : none;
+    /* display         : none; */
     background-color: #fff;
-    margin-top      : 50px;
-    /* opacity      : 0; */
-    transition      : opacity 0.5s ease;
+    /* margin-top      : 50px; */
+    opacity         : 0;
+    transition      : opacity 0.3s ease-in-out;
 }
 
 .navbar-position {
-    /* display: flex;
-    justify-content: center; */
     max-width: 1400px;
     margin   : 0 auto;
 }
 
-.active .navbar-overlay {
+.active.navbar-overlay {
     opacity: 1;
 }
 
-.navbar-overlay.closed {
+/* .navbar-overlay.closed {
     display: none;
-}
+} */
 
 .navbar-content {
     /* display: none; */
-    position        : absolute;
-    background-color: #f9f9f9;
-    width           : 1400px;
-    left            : 22.05%;
-    /* max-width    : 1400px; */
-    box-shadow      : 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index         : 1;
-    padding         : 30px 40px;
-    transition      : 0.5s ease;
+    position           : absolute;
+    background-color   : #f9f9f9;
+    /* width              : 1400px; */
+    left               : 22.05%;
+    /* max-width       : 1400px; */
+    box-shadow         : 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index            : 1;
+    padding            : 30px 40px;
+    /* transition      : 0.5s ease-in; */
 }
 
 .column {
@@ -206,7 +209,7 @@ li {
 }
 
 .group-products a:hover {
-    /* float           : left; */
+    float     : left;
     background: rgba(217, 217, 217, 0.3);
     color     : rgba(30, 30, 30, 1);
 }

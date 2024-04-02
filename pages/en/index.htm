@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="navbar-position">
-                        <div class="navbar-overlay closed" id="myDropdown">
+                        <div class="navbar-overlay" id="myDropdown">
                             <div class="navbar-content">
                                 <div class="row-navbar">
                                     <div class="column group-products">
@@ -135,13 +135,15 @@
                         function toggleDropdown() {
                             var dropdownContent = document.getElementById("myDropdown");
                             var mainContent = document.getElementById("mainContent");
-                            //dropdownContent.classList.toggle("active");
-                            if (dropdownContent.style.display === "block") {
-                                dropdownContent.style.display = "none";
-                                mainContent.classList.remove("opacity");
-                            } else {
-                                dropdownContent.style.display = "block";
+                            dropdownContent.classList.toggle("active");
+                            if (dropdownContent.classList.contains("active")) {
+                            //    dropdownContent.style.display = "none";
                                 mainContent.classList.add("opacity");
+                               // mainContent.classList.remove("opacity");
+                            } else {
+                            //   dropdownContent.style.display = "block";
+                                //mainContent.classList.add("opacity");
+                                mainContent.classList.remove("opacity")
                             }
                         }
                     </script>
