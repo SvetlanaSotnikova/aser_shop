@@ -91,6 +91,8 @@ li {
     /* margin-right   : 47px; */
     transition        : margin-left 0.5s ease;
     margin-top        : 15px;
+    height: 35px;
+
 }
 
 .container-burger {
